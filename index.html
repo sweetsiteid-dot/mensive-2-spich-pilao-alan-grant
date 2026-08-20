@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mensive Ke-2 | Spich Pilao & Alan Grant</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="semua-aku-dirayakan.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- =========================
+     LOADER
+========================= -->
+
+<div id="loader">
+
+    <div class="loader-book"></div>
+
+    <p>
+        Preparing our memories... 💚
+    </p>
+
+</div>
+
+
+<!-- =========================
+     PIN SCREEN
+========================= -->
+
+<section id="pinScreen">
+
+    <div class="pin-card">
+
+        <h1>💚</h1>
+
+        <h2>
+            A Little Place
+            Made For You
+        </h2>
+
+        <p>
+            Masukkan secret code
+            untuk membuka scrapbook kita.
+        </p>
+
+        <input
+            type="password"
+            id="pinInput"
+            maxlength="4"
+            inputmode="numeric"
+            placeholder="••••"
+        >
+
+        <button id="unlockBtn">
+            Open Memory 💌
+        </button>
+
+        <p id="pinError"></p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MAIN WEBSITE
+========================= -->
+
+<div id="website">
+
+
+    <!-- =========================
+         HERO / COVER
+    ========================= -->
+
+    <section class="hero">
+
+        <div class="floating-stars"></div>
+
+        <div class="hero-content">
+
+            <span class="badge">
+                Mensive Ke-2 💚
+            </span>
+
+            <h1>
+
+                Spich Pilao
+
+                <span>♡</span>
+
+                Alan Grant
+
+            </h1>
+
+            <p>
+                Two months,
+                countless memories,
+                and still choosing you.
+            </p>
+
+            <button id="openBookBtn">
+                Open Our Story 📖
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCRAPBOOK
+    ========================= -->
+
+    <main id="scrapbook">
+
+
+        <!-- =========================
+             CHAPTER 1
+        ========================= -->
+
+        <section class="chapter intro">
+
+            <div class="paper-card">
+
+                <span class="chapter-number">
+                    Chapter 01
+                </span>
+
+                <h2>
+                    Our Story 💚
+                </h2>
+
+                <p>
+                    Dua bulan mungkin terdengar singkat,
+                    tapi di dalamnya ada banyak sekali
+                    cerita, tawa, obrolan, dan momen
+                    kecil yang berarti.
+                </p>
+
+                <p>
+                    Scrapbook kecil ini dibuat untuk
+                    menyimpan sebagian dari cerita kita.
+                </p>
+
+                <span class="signature">
+                    — Spich Pilao
+                </span>
+
+            </div>
+
+            <div class="cover-photo">
+
+                <img
+                    src="foto1.jpg"
+                    alt="Memory 1"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 2
+             POLAROID MEMORIES
+        ========================= -->
+
+        <section class="chapter memories">
+
+            <span class="chapter-number">
+                Chapter 02
+            </span>
+
+            <h2 class="section-title">
+                Little Moments 📸
+            </h2>
+
+            <p class="section-subtitle">
+                Karena momen sederhana bersamamu
+                selalu terasa spesial.
+            </p>
+
+
+            <div class="polaroid-grid">
+
+
+                <div class="polaroid rotate-left">
+
+                    <div class="tape green"></div>
+
+                    <img
+                        src="foto2.jpg"
+                        alt="Memory 2"
+                    >
+
+                    <span>
+                        our favorite memory
+                    </span>
+
+                </div>
+
+
+                <div class="polaroid rotate-right">
+
+                    <div class="tape light-green"></div>
+
+                    <img
+                        src="foto3.jpg"
+                        alt="Memory 3"
+                    >
+
+                    <span>
+                        you make me smile
+                    </span>
+
+                </div>
+
+
+                <div class="polaroid rotate-left">
+
+                    <div class="tape green"></div>
+
+                    <img
+                        src="foto4.jpg"
+                        alt="Memory 4"
+                    >
+
+                    <span>
+                        one of my favorites
+                    </span>
+
+                </div>
+
+
+                <div class="polaroid rotate-right">
+
+                    <div class="tape light-green"></div>
+
+                    <img
+                        src="foto5.jpg"
+                        alt="Memory 5"
+                    >
+
+                    <span>
+                        my safe place
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 3
+             LETTER
+        ========================= -->
+
+        <section class="chapter letter-section">
+
+            <span class="chapter-number">
+                Chapter 03
+            </span>
+
+            <h2 class="section-title">
+                A Letter For You 💌
+            </h2>
+
+
+            <div class="envelope-container">
+
+
+                <div
+                    id="openLetter"
+                    class="envelope"
+                >
+
+                    <div class="envelope-front">
+
+                        Open Me 💚
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="letterPaper"
+                    class="letter-paper"
+                >
+
+                    <h3>
+                        Happy Mensive Ke-2 💚
+                    </h3>
+
+
+                    <p>
+
+                        Nggak terasa kita sudah sampai
+                        di bulan kedua.
+
+                        Dua bulan yang mungkin sederhana,
+                        tapi punya banyak cerita yang
+                        bakal selalu aku ingat.
+
+                    </p>
+
+
+                    <p>
+
+                        Terima kasih sudah menjadi bagian
+                        dari hari-hariku.
+
+                        Terima kasih untuk setiap perhatian,
+                        setiap obrolan, setiap tawa,
+                        dan setiap momen kecil yang
+                        kita lewati bersama.
+
+                    </p>
+
+
+                    <p>
+
+                        Semoga setelah dua bulan ini,
+                        masih ada banyak bulan berikutnya
+                        yang bisa kita rayakan bersama.
+
+                    </p>
+
+
+                    <p>
+
+                        Happy mensive ke-2.
+
+                        Semoga cerita kita terus berjalan
+                        dan halaman-halamannya semakin
+                        indah.
+
+                    </p>
+
+
+                    <span>
+                        — Spich Pilao 💚
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 4
+             FILM ROLL
+        ========================= -->
+
+        <section class="chapter film-section">
+
+            <span class="chapter-number">
+                Chapter 04
+            </span>
+
+            <h2 class="section-title">
+                Our Film Roll 🎞️
+            </h2>
+
+            <p class="section-subtitle">
+                A collection of little memories
+                I never want to forget.
+            </p>
+
+
+            <div class="film-roll">
+
+
+                <div class="film-frame">
+
+                    <img
+                        src="foto6.jpg"
+                        alt="Memory 6"
+                    >
+
+                </div>
+
+
+                <div class="film-frame">
+
+                    <img
+                        src="foto7.jpg"
+                        alt="Memory 7"
+                    >
+
+                </div>
+
+
+                <div class="film-frame">
+
+                    <img
+                        src="foto8.jpg"
+                        alt="Memory 8"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <p class="film-caption">
+
+                Swipe slowly
+                and relive every moment. 💚
+
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 5
+             QUIZ
+        ========================= -->
+
+        <section class="chapter quiz-section">
+
+            <span class="chapter-number">
+                Chapter 05
+            </span>
+
+            <h2 class="section-title">
+                Memory Check 🫶
+            </h2>
+
+            <p class="section-subtitle">
+                Coba jawab dua pertanyaan ini
+                untuk membuka memory berikutnya.
+            </p>
+
+
+            <div class="quiz-box">
+
+
+                <div class="question">
+
+                    <p>
+                        01. Siapa yang membuat web ini?
+                    </p>
+
+                    <input
+                        type="text"
+                        id="answer1"
+                        placeholder="jawab yang bener yaa 😚"
+                    >
+
+                </div>
+
+
+                <div class="question">
+
+                    <p>
+                        02. Kapan tanggal jadian kita?
+                    </p>
+
+                    <input
+                        type="text"
+                        id="answer2"
+                        placeholder="jangan sampai lupa 😡"
+                    >
+
+                </div>
+
+
+                <button id="checkQuiz">
+                    Unlock Special Memory ✨
+                </button>
+
+
+                <p id="quizResult"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 6
+             SPECIAL MEMORY
+        ========================= -->
+
+        <section
+            id="specialMemory"
+            class="chapter special-memory"
+        >
+
+            <span class="chapter-number">
+                Chapter 06
+            </span>
+
+            <h2 class="section-title">
+                Special Memory 🤍
+            </h2>
+
+
+            <div class="memory-reveal">
+
+
+                <div class="blur-photo">
+
+                    <img
+                        id="specialPhoto"
+                        src="foto9.jpg"
+                        alt="Special Memory"
+                    >
+
+                </div>
+
+
+                <button id="revealBtn">
+                    Reveal Memory ✨
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 7
+             COUNTER
+        ========================= -->
+
+        <section class="chapter counter-section">
+
+            <span class="chapter-number">
+                Chapter 07
+            </span>
+
+            <h2 class="section-title">
+                Since June 21, 2026 ⏳
+            </h2>
+
+            <p class="section-subtitle">
+                And the clock keeps counting...
+            </p>
+
+
+            <div class="counter-card">
+
+
+                <div class="counter-item">
+
+                    <h3 id="days">
+                        0
+                    </h3>
+
+                    <span>
+                        Days
+                    </span>
+
+                </div>
+
+
+                <div class="counter-item">
+
+                    <h3 id="hours">
+                        0
+                    </h3>
+
+                    <span>
+                        Hours
+                    </span>
+
+                </div>
+
+
+                <div class="counter-item">
+
+                    <h3 id="minutes">
+                        0
+                    </h3>
+
+                    <span>
+                        Minutes
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 8
+             FINAL PHOTO
+        ========================= -->
+
+        <section class="chapter ending-photo">
+
+            <span class="chapter-number">
+                Chapter 08
+            </span>
+
+
+            <div class="final-card">
+
+                <img
+                    src="foto10.jpg"
+                    alt="Final Memory"
+                >
+
+
+                <h2>
+                    You Are My Favorite Chapter 💚
+                </h2>
+
+
+                <p>
+                    Every page becomes beautiful
+                    because you are in it.
+                </p>
+
+
+                <span>
+                    — Spich Pilao
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CHAPTER 9
+             SECRET MESSAGE
+        ========================= -->
+
+        <section class="chapter secret-section">
+
+            <span class="chapter-number">
+                Chapter 09
+            </span>
+
+
+            <h2 class="section-title">
+                Hidden Message 🌟
+            </h2>
+
+
+            <p class="hint-text">
+
+                ✨ Ada pesan rahasia yang sedang
+                menunggu.
+
+                Coba sentuh semua bintang
+                untuk menemukannya.
+
+            </p>
+
+
+            <p id="starProgress">
+                Find all the stars (0/5)
+            </p>
+
+
+            <div class="stars-box">
+
+
+                <div class="star secret-star">
+                    ⭐
+                </div>
+
+
+                <div class="star secret-star">
+                    ⭐
+                </div>
+
+
+                <div class="star secret-star">
+                    ⭐
+                </div>
+
+
+                <div class="star secret-star">
+                    ⭐
+                </div>
+
+
+                <div class="star secret-star">
+                    ⭐
+                </div>
+
+
+            </div>
+
+
+            <div id="secretMessage">
+
+                <p>
+
+                    Aku akan tetap memilihmu,
+                    di setiap halaman,
+                    di setiap cerita,
+                    dan di setiap hari.
+
+                </p>
+
+
+                <h3>
+                    💚🤍
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ENDING
+        ========================= -->
+
+        <section class="chapter ending">
+
+
+            <div class="ending-card">
+
+
+                <span class="badge">
+                    Two Months Together
+                </span>
+
+
+                <h2>
+                    Happy Mensive Ke-2 💚
+                </h2>
+
+
+                <p>
+
+                    Thank you for being part
+                    of my happiest memories.
+
+                </p>
+
+
+                <p class="buyer-text">
+                    buyer
+                </p>
+
+
+                <button id="replayBtn">
+                    Replay Memories 📖
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
